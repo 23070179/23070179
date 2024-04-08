@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <!---mobile--->
+ <div class="mobile hidden">
+    <nav>
+      <ul>
+        <li>Trang chủ</li>
+        <li>Tin tức nổi bật</li>
+        <li>Giáo dục</li>
+        <li>Khoa học</li>
+        <li>Thể thao</li>
+      </ul>
+    </nav>
+    <div class="inputSearch">
+      <input type="text" placeholder="Type to search..."/>
+      <span><i class="fa-solid fa-search"></i></span>
+    </div>
+  </div>
+</header>
+
+Css:
+
+/***mobile menu***/
+.mobile{
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  max-width: 700px;
+  background-color: #f5f6f9;
+  height: calc(100% - 100px)
+}
+.hidden{
+  display:none;
+}
+.mobile nav,
+.mobile nav ul{
+  flex-direction: column;
+}
+.mobile .inputSearch{
+  height:35px;
+  width:300px;
+}
+@media all and (min-width:700px) {
+.mobile{
+  display: none;
+}
+}
